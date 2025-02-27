@@ -1,0 +1,127 @@
+.projects-section {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #5829bb, #0f172a);
+  padding: 4rem 1rem; /* Adjusted padding */
+}
+
+/* Container */
+.projects-container {
+  max-width: 7xl;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Title */
+.projects-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 4rem; /* Adjusted margin */
+  text-align: center;
+}
+
+.projects-title-highlight {
+  color: #8b5cf6;
+}
+
+/* Grid Layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+  }
+}
+
+/* Card */
+.project-card {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1); /* bg-white/10 */
+  backdrop-filter: blur(10px); /* backdrop-blur-lg */
+  border-radius: 0.5rem; /* rounded-2xl */
+  overflow: hidden;
+}
+
+/* Image Section */
+.project-image-container {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.project-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.project-image-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+/* Content */
+.project-content {
+  padding: 2rem;
+}
+
+/* Title Text */
+.project-title-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+/* Description */
+.project-description {
+  color: #cbd5e1;
+  margin-bottom: 1.5rem;
+}
+
+/* Tech Stack */
+.project-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.project-tech-badge {
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  color: white;
+  backdrop-filter: blur(8px);
+}
+
+/* Link */
+.project-link {
+  margin-top: 1.5rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #8b5cf6;
+  border-radius: 2rem;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  background-color: #ede9fe;
+  color: black;
+}
+
+.project-link-icon {
+  width: 1rem;
+  height: 1rem;
+  display: inline;
+  vertical-align: middle;
+}
