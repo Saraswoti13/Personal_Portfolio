@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import photo from "../assets/mine.jpeg";
 import { Github, Linkedin, Mail } from "lucide-react"; // Correct import
@@ -7,6 +7,16 @@ import "../css/About.css";
 import classNames from "classnames";
 
 const About = () => {
+  const [isFrontend, setIsFrontend] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsFrontend((prev) => !prev);
+    }, 3000); // Switch every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="about" className="about-section">
       <div className="about-container">
@@ -37,14 +47,36 @@ const About = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <motion.h1
+             <motion.h1
               className="about-heading"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              <span className="about-heading-frontend">FrontEnd </span>
-              <span className="about-heading-developer">Developer</span>
+              <span className="about-heading-developer">I&apos;m</span>
+              <span className="about-heading-frontend">
+                {isFrontend ? (
+                  <motion.span
+                    key="frontend"
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 50 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    FrontEnd Developer!
+                  </motion.span>
+                ) : (
+                  <motion.span
+                    key="typescript"
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 50 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    UI/UX Designer!
+                  </motion.span>
+                )}
+              </span>
             </motion.h1>
 
             <motion.p

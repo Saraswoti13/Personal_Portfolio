@@ -3,6 +3,7 @@ import { Check, Mail, Send, User } from 'lucide-react';
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 import '../css/Contact.css';
+import photo from '../assets/contact.webp';
 
 const Contact = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -43,13 +44,16 @@ const Contact = () => {
     return (
         <section id="contact" className="contact-section">
             <div className='contact-container'>
-                <div className='contact-bg'></div>
                 <div className='contact-box'>
                     {!submitted ? (
                         <>
+                            <div className='contact-header'>
                             <h2 className='contact-title'>
                                 Let&apos;s <span className='highlight'>Connect</span>
                             </h2>
+                                <img src={photo} alt="contact" />
+                            
+                            </div>
                             <form onSubmit={onSubmit} className='contact-form'>
                                 <div className='input-group'>
                                     <User className='icon' />

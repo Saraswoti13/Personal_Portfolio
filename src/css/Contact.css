@@ -5,10 +5,17 @@
 }
 
 .contact-box {
+    width: 80rem;
+    display: flex;
     backdrop-filter: blur(20px);
-    padding: 1rem;
     border-radius: 20px;
     animation: fadeIn 1s ease-in-out;
+}
+
+img {
+    width: 45%;
+    height: auto;
+    border-radius: 50%;
 }
 
 /* Title */
@@ -30,11 +37,13 @@
 
 /* Form Styling */
 .contact-form {
-    width: 50rem;
+    width: 30rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     flex-wrap: wrap;
+    padding-right: 50px;
+    padding-top: 100px;
 }
 
 /* Input Fields */
@@ -77,6 +86,8 @@
 
 /* Button */
 .button-wrapper {
+    display: flex;
+    justify-content: space-around;
     text-align: center;
 }
 
@@ -105,19 +116,23 @@
 
 /* Confirmation Message */
 .confirmation {
+    display: flex;
+    justify-content: center;
+    padding-left: 45%;
     text-align: center;
+    flex-direction: column;
     animation: slideIn 1s ease-in-out;
 }
 
 .success-icon {
-    width: 4rem;
-    height: 4rem;
+    width: 12rem;
+    height: 10rem;
     color: #22c55e;
     margin-bottom: 1.5rem;
 }
 
 .success-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: white;
     margin-bottom: 1rem;
@@ -162,5 +177,71 @@
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+/* 🌍 Responsive Design */
+@media (max-width: 1024px) {
+    .contact-box {
+        max-width: 45rem;
+    }
+
+    .contact-title {
+        font-size: 2.5rem;
+    }
+
+    .send-button, .send-again {
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-box {
+        max-width: 30rem;
+        padding: 1.5rem;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .input-group input,
+    .textarea-group textarea {
+        font-size: 1rem;
+        padding: 1rem;
+        padding-left: 3rem;
+    }
+
+    .send-button, .send-again {
+        font-size: 1rem;
+        padding: 0.9rem 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-box {
+        max-width: 50%;
+        padding: 1.2rem;
+    }
+
+    .contact-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-form {
+        width: 15rem;
+    }
+
+    .input-group input,
+    .textarea-group textarea {
+        font-size: 0.95rem;
+        padding: 1rem;
+        padding-left: 2.8rem;
+    }
+
+    .send-button, .send-again {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.5rem;
     }
 }
