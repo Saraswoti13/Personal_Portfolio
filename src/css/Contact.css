@@ -1,0 +1,166 @@
+/* General Styles */
+.contact-section {
+    max-width: 1600px;
+    width: 100%;
+}
+
+.contact-box {
+    backdrop-filter: blur(20px);
+    padding: 1rem;
+    border-radius: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Title */
+.contact-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.contact-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.highlight {
+    color: #a855f7;
+}
+
+/* Form Styling */
+.contact-form {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Input Fields */
+.input-group, .textarea-group {
+    position: relative;
+}
+
+.input-group .icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a855f7;
+}
+
+.input-group input, 
+.textarea-group textarea {
+    width: 100%;
+    padding: 1rem;
+    padding-left: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.textarea-group textarea {
+    padding-left: 1rem;
+    resize: none;
+}
+
+.input-group input:focus, 
+.textarea-group textarea:focus {
+    border-color: #9333ea;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(147, 51, 234, 0.5);
+}
+
+/* Button */
+.button-wrapper {
+    text-align: center;
+}
+
+.send-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: linear-gradient(to right, #9333ea, #ec4899);
+    color: white;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.send-button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.button-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Confirmation Message */
+.confirmation {
+    text-align: center;
+    animation: slideIn 1s ease-in-out;
+}
+
+.success-icon {
+    width: 4rem;
+    height: 4rem;
+    color: #22c55e;
+    margin-bottom: 1.5rem;
+}
+
+.success-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.success-text {
+    color: #cbd5e1;
+    margin-bottom: 2rem;
+}
+
+/* Send Again Button */
+.send-again {
+    background: linear-gradient(to right, #9333ea, #ec4899);
+    color: white;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    transition: transform 0.3s;
+}
+
+.send-again:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

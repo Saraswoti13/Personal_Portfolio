@@ -38,7 +38,7 @@ const Header = () => {
     <nav className={`header ${scrolled ? "header-scrolled" : ""}`}>
       <div className="header-container">
         <div className="header-content">
-          <a href="" className="logo">
+          <a href="/" className="logo">
             SS
           </a>
           <div className="nav-links">

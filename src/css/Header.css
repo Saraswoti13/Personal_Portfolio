@@ -138,6 +138,7 @@
 
 .nav-link:hover {
   color: #ff79c6;
+  text-decoration: underline;
 }
 
 @media (min-width: 640px) {

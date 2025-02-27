@@ -107,7 +107,7 @@ const About = () => {
                 transition={{ duration: 0.6, delay: 0.8 }}
               >
                 <motion.a
-                  href="https://github.com"
+                  href="https://github.com/Saraswoti13"
                   className="about-social-icon"
                   target="_blank"
                   rel="noopener noreferrer" // Add rel="noopener noreferrer" for security
@@ -117,7 +117,7 @@ const About = () => {
                 </motion.a>
 
                 <motion.a
-                  href="https://linkedin.com"
+                  href="https://linkedin.com/in/saraswotishrestha/"
                   className="about-social-icon"
                   target="_blank"
                   rel="noopener noreferrer" // Add rel="noopener noreferrer" for security
@@ -127,7 +127,7 @@ const About = () => {
                 </motion.a>
 
                 <motion.a
-                  href="mailto:your-email@gmail.com"
+                  href="mailto:sthasumitra83@gmail.com"
                   className="about-social-icon"
                   target="_blank"
                   rel="noopener noreferrer" // Add rel="noopener noreferrer" for security

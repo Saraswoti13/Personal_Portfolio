@@ -1,24 +1,20 @@
 .projects-section {
   min-height: 100vh;
   background-image: linear-gradient(to bottom right, #5829bb, #0f172a);
-  padding: 4rem 1rem; /* Adjusted padding */
+  padding: 4rem 1rem;
 }
 
-/* Container */
 .projects-container {
-  max-width: 7xl;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
-/* Title */
 .projects-title {
   font-size: 2.5rem;
   font-weight: bold;
   color: white;
-  margin-bottom: 4rem; /* Adjusted margin */
+  margin-bottom: 4rem;
   text-align: center;
 }
 
@@ -26,7 +22,6 @@
   color: #8b5cf6;
 }
 
-/* Grid Layout */
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -35,20 +30,24 @@
 
 @media (min-width: 768px) {
   .projects-grid {
-    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Card */
 .project-card {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.1); /* bg-white/10 */
-  backdrop-filter: blur(10px); /* backdrop-blur-lg */
-  border-radius: 0.5rem; /* rounded-2xl */
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Image Section */
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 .project-image-container {
   position: relative;
   overflow: hidden;
@@ -59,6 +58,11 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1);
 }
 
 .project-image-overlay {
@@ -67,12 +71,10 @@
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
 }
 
-/* Content */
 .project-content {
   padding: 2rem;
 }
 
-/* Title Text */
 .project-title-text {
   font-size: 1.5rem;
   font-weight: 600;
@@ -80,13 +82,11 @@
   margin-bottom: 0.75rem;
 }
 
-/* Description */
 .project-description {
   color: #cbd5e1;
   margin-bottom: 1.5rem;
 }
 
-/* Tech Stack */
 .project-tech-stack {
   display: flex;
   flex-wrap: wrap;
@@ -102,7 +102,6 @@
   backdrop-filter: blur(8px);
 }
 
-/* Link */
 .project-link {
   margin-top: 1.5rem;
   display: inline-block;

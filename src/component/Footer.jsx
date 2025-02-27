@@ -1,9 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin, faEnvelope } from "@fortawesome/free-brands-svg-icons";
+import { motion } from "framer-motion";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "../css/Footer.css"; // Import the external CSS file
+
 
 const Footer = () => {
   return (
@@ -19,7 +21,7 @@ const Footer = () => {
           transition={{ duration: 0.6, delay: 0.8 }}
         >
           <motion.a
-            href="https://github.com"
+            href="https://github.com/Saraswoti13"
             className="footer-social-icon"
             target="_blank"
             rel="noopener noreferrer"
@@ -29,7 +31,7 @@ const Footer = () => {
           </motion.a>
 
           <motion.a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/saraswotishrestha/"
             className="footer-social-icon"
             target="_blank"
             rel="noopener noreferrer"
@@ -39,7 +41,7 @@ const Footer = () => {
           </motion.a>
 
           <motion.a
-            href="mailto:your-email@gmail.com"
+            href="mailto:sthasumitra83@gmail.com"
             className="footer-social-icon"
             target="_blank"
             rel="noopener noreferrer"
