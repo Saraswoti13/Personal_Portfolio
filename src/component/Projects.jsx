@@ -5,6 +5,7 @@ import photo1 from "../assets/projectimages/project1image.png";
 import photo2 from "../assets/projectimages/project2image.png";
 import photo3 from "../assets/projectimages/project3image.png";
 import photo4 from "../assets/projectimages/project4image.webp";
+import photo5 from "../assets/projectimages/project5image.png";
 import { ExternalLink } from 'lucide-react';
 import "../css/Projects.css"; 
 
@@ -43,7 +44,7 @@ const Projects = () => {
       description: "Developed dynamic, responsive portfolio using React. Implemented React Router for navigation.",
       techStack: ['React', 'JavaScript', 'HTML', 'CSS'],
       githubLink: "https://github.com/saraswoti13/Personal_Portfolio",
-      image: photo3
+      image: photo5
     },
   ];
 
