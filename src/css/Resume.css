@@ -1,6 +1,10 @@
 .resume-container {
+  max-width: 1600px;
+  width: 90%;
   text-align: center;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
